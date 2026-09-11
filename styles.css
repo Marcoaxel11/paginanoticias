@@ -324,3 +324,88 @@ body {
         justify-content: center;
     }
 }
+
+/* ================= SECCIÓN DE NOTICIAS ================= */
+.seccion-noticias {
+    margin-top: 60px; /* Separación con el bloque de Somos */
+}
+
+.titulo-seccion {
+    font-size: 2rem;
+    color: #0f3d33;
+    margin-bottom: 25px;
+    font-weight: 700;
+    border-bottom: 3px solid #70aa8e; /* Subrayado verde menta */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Grilla para que las noticias se acomoden solas en pantalla */
+.grid-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Diseño de la Tarjeta */
+.tarjeta-noticia {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.tarjeta-noticia:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.tarjeta-noticia img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.contenido-noticia {
+    padding: 25px;
+}
+
+.categoria-noticia {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #70aa8e;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contenido-noticia h3 {
+    font-size: 1.3rem;
+    color: #0f3d33;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.contenido-noticia p {
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn-leer {
+    display: inline-block;
+    color: #0f3d33;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.btn-leer:hover {
+    color: #70aa8e;
+}
