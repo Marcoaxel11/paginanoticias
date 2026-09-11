@@ -1,4 +1,168 @@
+/* ================= RESETEO Y ESTILOS GENERALES ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f4f6f8;
+    color: #222222;
+    line-height: 1.6;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ================= ENCABEZADO ================= */
+.header-principal {
+    background-color: #0f3d33;
+    
+    /* Nota: Si tienes una imagen de fondo con espirales (ej. imagen_espiral.png), 
+       descomenta las siguientes 3 líneas y pon el nombre de tu archivo */
+    /* background-image: url('imagen_espiral.png'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    
+    color: #ffffff;
+    padding: 1.2rem 0;
+    border-bottom: 4px solid #70aa8e;
+}
+
+.header-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo */
+.logo a {
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+/* Slogan Central */
+.slogan-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.separador {
+    color: #70aa8e;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.slogan {
+    font-size: 0.95rem;
+    color: #e0e6e4;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Botones de Acción (Búsqueda y Menú) */
+.header-acciones {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-icono {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-icono:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #70aa8e;
+}
+
+.material-symbols-outlined {
+    font-size: 26px;
+}
+
+/* ================= CONTENIDO PRINCIPAL / SECCIÓN "SOMOS" ================= */
+.principal {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.seccion-somos {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #70aa8e;
+}
+
+@media (min-width: 768px) {
+    .seccion-somos {
+        flex-direction: row;
+    }
+
+    .somos-texto {
+        flex: 1;
+    }
+
+    .somos-imagen {
+        flex: 1;
+    }
+}
+
+.subtitulo-seccion {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #70aa8e;
+    letter-spacing: 1.5px;
+}
+
+.somos-texto h2 {
+    font-size: 2.2rem;
+    color: #0f3d33;
+    margin-bottom: 15px;
+}
+
+.somos-texto p {
+    font-size: 1.1rem;
+    color: #444444;
+    line-height: 1.8;
+}
+
+.somos-texto strong {
+    color: #0f3d33;
+}
+
+.somos-imagen img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= PIE DE PÁGINA ================= */
 .pie-pagina {
     background-color: #0f3d33;
     color: #ffffff;
@@ -68,7 +232,7 @@
     transform: translateY(-3px);
 }
 
-/* Divisor personalizado LA ESPIRAL (QUE INFORMA) */
+/* Divisor LA ESPIRAL (QUE INFORMA) */
 .divisor-firma {
     display: flex;
     align-items: center;
@@ -97,8 +261,17 @@
     color: #a0b2ab;
 }
 
-/* Ajuste móvil */
-@media (max-width: 600px) {
+/* Adaptabilidad a dispositivos móviles */
+@media (max-width: 767px) {
+    .header-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .slogan-container {
+        margin: 10px 0;
+    }
+
     .footer-contenido {
         flex-direction: column;
         text-align: center;
