@@ -42,7 +42,7 @@ body {
 }
 
 .logo img {
-    max-height: 65px; /* Altura del logo, cámbiala si lo necesitas más grande o chico */
+    max-height: 20px; /* Altura del logo, cámbiala si lo necesitas más grande o chico */
     width: auto;
     object-fit: contain;
 }
