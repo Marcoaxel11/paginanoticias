@@ -1,184 +1,111 @@
-/* Reseteo básico y variables */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
-    line-height: 1.6;
-}
-
-.contenedor {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Encabezado */
-.header-principal {
-    background-color: #0f3d33;
-    color: #ffffff;
-    padding: 1.5rem 0;
-    border-bottom: 4px solid #70aa8e;
-}
-
-.header-contenido {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.logo span {
-    color: #70aa8e;
-}
-
-.navegacion a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.navegacion a:hover {
-    color: #70aa8e;
-}
-
-/* Contenido Principal */
-.principal {
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
-
-.titulo-seccion {
-    margin: 30px 0 15px 0;
-    font-size: 1.5rem;
-    color: #0f3d33;
-    border-left: 5px solid #70aa8e;
-    padding-left: 10px;
-}
-
-/* Noticia Destacada */
-.tarjeta-grande {
-    background: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 768px) {
-    .tarjeta-grande {
-        flex-direction: row;
-    }
-    .tarjeta-grande img {
-        width: 55%;
-    }
-}
-
-.tarjeta-grande img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-}
-
-.tarjeta-info {
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.categoria {
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: #70aa8e;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-    display: inline-block;
-}
-
-.tarjeta-info h2 {
-    font-size: 1.6rem;
-    margin-bottom: 12px;
-    color: #111;
-}
-
-.tarjeta-info p {
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.btn-leer {
-    display: inline-block;
-    color: #0f3d33;
-    font-weight: bold;
-    text-decoration: none;
-    transition: transform 0.2s;
-}
-
-.btn-leer:hover {
-    transform: translateX(5px);
-}
-
-/* Grilla de Noticias Secundarias */
-.grid-noticias {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.tarjeta {
-    background: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.tarjeta:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-}
-
-.tarjeta img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.tarjeta-cuerpo {
-    padding: 18px;
-}
-
-.tarjeta-cuerpo h3 {
-    font-size: 1.1rem;
-    margin: 8px 0;
-    color: #222;
-}
-
-.tarjeta-cuerpo p {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-/* Pie de Página */
+/* ================= ESTILOS DEL PIE DE PÁGINA ================= */
 .pie-pagina {
     background-color: #0f3d33;
     color: #ffffff;
+    padding: 40px 0 25px 0;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.footer-contacto h3,
+.footer-redes h3 {
+    font-size: 1.1rem;
+    color: #70aa8e;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-contacto p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+}
+
+.icono-contacto {
+    font-size: 20px;
+    color: #70aa8e;
+}
+
+.footer-contacto a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-contacto a:hover {
+    color: #70aa8e;
+}
+
+.redes-iconos {
+    display: flex;
+    gap: 15px;
+}
+
+.red-social {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.red-social:hover {
+    background-color: #70aa8e;
+    color: #0f3d33;
+    transform: translateY(-3px);
+}
+
+/* Divisor personalizado LA ESPIRAL (QUE INFORMA) */
+.divisor-firma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0 20px 0;
+}
+
+.divisor-firma .linea {
+    flex: 1;
+    height: 1px;
+    background-color: rgba(112, 170, 142, 0.4);
+}
+
+.texto-firma {
+    color: #70aa8e;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.copyright {
     text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
-    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #a0b2ab;
+}
+
+/* Ajuste móvil */
+@media (max-width: 600px) {
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer-contacto p {
+        justify-content: center;
+    }
 }
