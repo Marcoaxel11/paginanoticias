@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    /* Aquí aplicamos Montserrat como fuente principal */
+    font-family: 'Montserrat', sans-serif;
     background-color: #f4f6f8;
     color: #222222;
     line-height: 1.6;
@@ -21,13 +22,6 @@ body {
 /* ================= ENCABEZADO ================= */
 .header-principal {
     background-color: #0f3d33;
-    
-    /* Nota: Si tienes una imagen de fondo con espirales (ej. imagen_espiral.png), 
-       descomenta las siguientes 3 líneas y pon el nombre de tu archivo */
-    /* background-image: url('imagen_espiral.png'); */
-    /* background-size: cover; */
-    /* background-position: center; */
-    
     color: #ffffff;
     padding: 1.2rem 0;
     border-bottom: 4px solid #70aa8e;
@@ -40,7 +34,7 @@ body {
     gap: 20px;
 }
 
-/* Logo */
+/* Logo - Montserrat Extra Bold */
 .logo a {
     font-size: 1.9rem;
     font-weight: 800;
@@ -67,7 +61,7 @@ body {
     font-size: 0.95rem;
     color: #e0e6e4;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 400; /* Regular para contrastar y ser legible */
 }
 
 /* Botones de Acción (Búsqueda y Menú) */
@@ -131,6 +125,7 @@ body {
     }
 }
 
+/* Montserrat Bold para subtítulo y título */
 .subtitulo-seccion {
     font-size: 0.8rem;
     font-weight: 700;
@@ -140,6 +135,7 @@ body {
 
 .somos-texto h2 {
     font-size: 2.2rem;
+    font-weight: 700;
     color: #0f3d33;
     margin-bottom: 15px;
 }
@@ -151,6 +147,7 @@ body {
 }
 
 .somos-texto strong {
+    font-weight: 700;
     color: #0f3d33;
 }
 
@@ -178,9 +175,11 @@ body {
     margin-bottom: 35px;
 }
 
+/* Títulos del footer en Montserrat Bold */
 .footer-contacto h3,
 .footer-redes h3 {
     font-size: 1.1rem;
+    font-weight: 700;
     color: #70aa8e;
     margin-bottom: 12px;
     text-transform: uppercase;
@@ -232,7 +231,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* Divisor LA ESPIRAL (QUE INFORMA) */
+/* Divisor LA ESPIRAL (QUE INFORMA) en Montserrat Bold */
 .divisor-firma {
     display: flex;
     align-items: center;
@@ -249,6 +248,7 @@ body {
 
 .texto-firma {
     color: #70aa8e;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 2px;
